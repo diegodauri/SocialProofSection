@@ -22,6 +22,8 @@
   margin-right: 10%;
   margin-top: 100px;
   margin-bottom: 50px;
+  font-family: Spartan;
+  font-size: 90%;
 }
 
 .card-img-top {
@@ -33,13 +35,24 @@
 
 .card-head {
   position: relative;
-  bottom: 15%;
+  bottom: 10%;
   left: 15%;
+}
+
+.card-subtitle {
+  font-weight: 300;
+  color: hsl(333, 80%, 67%);
+}
+
+.card-title {
+  font-family: Spartan;
+  font-weight: 500;
+  color: hsl(300, 24%, 96%);
 }
 
 .container {
   background-color: hsl(300, 24%, 96%);
-  font-family: spartan;
+  font-family: ;
   font-weight: 700;
   color: hsl(300, 43%, 22%);
   border-radius: 3%;
@@ -95,7 +108,7 @@
 
 
 h1 {
-  font-family: spartan;
+  font-family: Spartan;
   font-weight: 700;
   color: hsl(300, 43%, 22%);
 }
@@ -106,4 +119,50 @@ body {
   url(images/bg-pattern-bottom-desktop.svg);
   background-repeat: no-repeat;
   background-size: 100%;
+}
+
+h4 {
+  color: #797a7e;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+.container {
+  position: static;
+}
+.title {
+  margin: 0 20%;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 60px;
+}
+.card-deck {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+body {
+  font-size: 15px;
+  background-image: url(images/bg-pattern-top-mobile.svg),
+  url(images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.stars {
+  display: block;
+  text-align: center;
+}
+.review-p {
+  text-align: center;
+  margin: 0 18%;
+}
+.card-head {
+position: relative;
+bottom: 30px;
+
+}
 }
